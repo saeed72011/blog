@@ -1,0 +1,12 @@
+@import "../../public/client/css/bootstrap.min.css";
+/*!*@import "../../public/client/css/tobii.min.css";*!*/
+@import "../../public/client/css/materialdesignicons.min.css";
+@import "../../public/client/unicons.iconscout.com/release/v3.0.6/css/line.css";
+/*!*@import "../../public/client/css/tiny-slider.css";*!*/
+@import "../../public/client/css/style.min.css";
+@import "../../public/client/css/colors/default.css";
+@import "../../public/ckeditor5/src/style-content.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
