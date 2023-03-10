@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/x-icon" href="{{asset('images/favicon.png')}}">
+<link rel="shortcut icon" type="image/x-icon" href="{{assetFile(@$setting->favicon)}}">
 <meta name="theme-color" content="#5A8DEE">
 @vite(['resources/css/app.css', 'resources/js/app.js'])
 @livewire('livewire-ui-modal')
