@@ -53,8 +53,8 @@
 
 <meta name="generator" content="Saeed Valipoor" />
 <meta name="author" content="https://ojalweb.ir/" />
-<meta name="email" content="info@{{ url('') }}" />
-<meta name="website" content="{{env('APP_URL', url(''))}}" />
+<meta name="email" content="{{@$setting->email}}" />
+<meta name="website" content="{{@$setting->url}}" />
 <meta name="Version" content="v2.0" />
 
 
@@ -64,9 +64,9 @@
 
 <!-- Favicons
 ============================================= -->
-<link rel="icon" href="{{asset('client/images/favicon/favicon-32x32.png')}}" type="image/x-icon">
-<link rel="shortcut icon" href="{{asset('client/images/favicon/favicon-32x32.png')}}" sizes="32x32">
-<link rel="apple-touch-icon" href="{{asset('client/images/favicon/apple-touch-icon-57x57.png')}}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{asset('client/images/favicon/apple-touch-icon-72x72.png')}}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{asset('client/images/favicon/apple-touch-icon-114x114.png')}}">
+
+<link rel="shortcut icon" href="{{assetFile(@$setting->favicon)}}" sizes="32x32">
+<link rel="apple-touch-icon" href="{{assetFile(@$setting->favicon)}}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{assetFile(@$setting->favicon)}}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{assetFile(@$setting->favicon)}}">
 <!-- Favicons  end -->
