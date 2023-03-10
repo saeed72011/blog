@@ -35,7 +35,7 @@ return new class extends Migration
             $table->text('meta_desc')->nullable();
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->string('about')->nullable();
+            $table->text('about')->nullable();
             $table->timestamps();
         });
     }

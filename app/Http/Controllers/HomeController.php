@@ -43,7 +43,6 @@ class HomeController extends Controller
             ->get();
 
         $teams = Team::query()
-            ->orderByDesc('id')
             ->where('status', true)
             ->orderBy('sort')
             ->get();

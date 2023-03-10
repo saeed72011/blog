@@ -29,10 +29,10 @@ class EditSetting extends AdminBaseComponent
         'setting.index' => 'nullable|boolean',
         'setting.title' => 'nullable|string|max:255',
         'setting.meta_title' => 'nullable|string|max:255',
-        'setting.meta_desc' => 'nullable|string|max:255',
+        'setting.meta_desc' => 'nullable|string|max:1500',
         'setting.latitude' => 'nullable|string|max:255',
         'setting.longitude' => 'nullable|string|max:255',
-        'setting.about' => 'nullable|string|max:255',
+        'setting.about' => 'nullable|string|max:1500',
     ];
 
 

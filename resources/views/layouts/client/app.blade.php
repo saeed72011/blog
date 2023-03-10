@@ -7,6 +7,7 @@
     @stack('metas')
     <link rel="canonical" href="{{$canonical}}" >
     @include('layouts.client.includes.link-header')
+    @if(!$setting->index) <meta name="robots" content="noindex"> @endif
 </head>
 
 <body class="page rtl">

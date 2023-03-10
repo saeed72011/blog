@@ -277,9 +277,9 @@
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "@json(@$setting->title . '-' . @$setting->name)",
-          "url": "@json(@$setting->url)",
-          "logo": "@json(assetFile(@$setting->logo))"
+          "name": "{{@$setting->title . '-' . @$setting->name}}",
+          "url": "{{@$setting->url}}",
+          "logo": "{{assetFile(@$setting->logo)}}"
         }
     </script>
 
@@ -287,21 +287,21 @@
         {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "@json(@$setting->title . '-' . @$setting->name)",
-          "image": "@json(assetFile(@$setting->image))",
-          "@id": "@json(@$setting->url)",
-          "url": "@json(assetFile(@$setting->url))",
-          "telephone": "@json(@$setting->phono)",
+          "name": "{{@$setting->title . '-' . @$setting->name}}",
+          "image": "{{assetFile(@$setting->image)}}",
+          "@id": "{{@$setting->url}}",
+          "url": "{{assetFile(@$setting->url)}}",
+          "telephone": "{{@$setting->phono}}",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "@json(@$setting->address)",
-            "addressLocality": "@json(@$setting->city)",
+            "streetAddress": "{{@$setting->address}}",
+            "addressLocality": "{{@$setting->city}}",
             "addressCountry": "IR"
           },
         "geo": {
         "@type": "GeoCoordinates",
-        "latitude": @json(@$stting->latitude),
-        "longitude": @json(@$stting->longitude)
+        "latitude": {{@$setting->latitude}},
+        "longitude": {{@$setting->longitude}}
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -313,8 +313,8 @@
             "Saturday",
             "Sunday"
           ],
-            "opens": "@json(@$stting->open)",
-            "closes": "@json(@$stting->close)"
+            "opens": "{{@$setting->opens}}",
+            "closes": "{{@$setting->closes}}"
             }
         }
 

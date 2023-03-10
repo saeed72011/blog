@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa">
     <head>
-        <title>{{env('APP_NAME', 'اوجال وب')}} - @yield('title')</title>
+        <title>{{@$seting->name}} - @yield('title')</title>
         @include('layouts.client.includes.link-header')
     </head>
     <body>

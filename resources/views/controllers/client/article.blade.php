@@ -313,25 +313,25 @@
           "@type": "Article",
           "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "@json(route('blog.detail', ['article' => $article->slug]))"
+            "@id": "{{route('blog.detail', ['article' => $article->slug])}}"
           },
-          "headline": "@json($article->title)",
-          "image": "@json(assetFile( $article->image))",
+          "headline": "{{$article->title}}",
+          "image": "{{assetFile( $article->image)}}",
           "author": {
             "@type": "Person",
-            "name": "@json(@$setting->name)",
-            "url": "@json(route('home'))"
+            "name": "{{@$setting->name}}",
+            "url": "{{@$setting->url}}"
           },
           "publisher": {
             "@type": "Organization",
-            "name": "@json(@$setting->name . ' - ' .  @$setting->title)",
+            "name": "{{@$setting->name . ' - ' .  @$setting->title}}",
             "logo": {
               "@type": "ImageObject",
               "url": "{{assetFile(@$setting->logo)}}"
             }
           },
-          "datePublished": "@json($article->created_at)",
-          "dateModified": "@json($article->updated_at)"
+          "datePublished": "{{$article->created_at}}",
+          "dateModified": "{{$article->updated_at}}"
         }
 
     </script>
